@@ -158,14 +158,9 @@ padding-bottom: 1em;
 }
 .summary{
   padding: 5em;
-  font-size: 1em !important;
-  text-align: start;
+    font-size: 1.5em !important;
+    text-align: start;
 }
-.summary p{
-    color: #687864;
-}
-
-
 .subContainer{
   width: 50px;
   display: inline-block;
@@ -315,11 +310,14 @@ ul.social li a:hover i { -moz-transform: rotate(360deg); -webkit-transform: rota
   height: 100%;
   width: 100%;
   display: table;
+  background-color: rgba(0,0,0,.2);
+  background-image: linear-gradient(to right,rgba(0,0,0,.9),rgba(0,0,0,.75), rgba(0,0,0,.2));
+  color: white;
 }
 .about_firstSlide div{
   display: table-cell;
     vertical-align: middle;
-    font-size: 3.25rem;
+    font-size: 2.65rem;
     line-height: 1.25;
     font-family: Verdana;
     font-weight: 100;
@@ -338,10 +336,9 @@ ul.social li a:hover i { -moz-transform: rotate(360deg); -webkit-transform: rota
 
 }
 .about_parallex_1 {
-  xbackground-image: url(../images/bg_2.png);
+  background-image: url(../images/bg.jpg);
     min-height: 100%;
-    background-size: 20%;
-    background-position: 20% 100%;
+    background-position: 0% 0%;
 }
 
 .about_parallex_2 {
@@ -743,7 +740,7 @@ header ul{
   padding-left: 5%;
 }
 .summary{
-  padding: 2em;
+  padding: 1em;
 }
 .summary p {
   width: 100%;
@@ -809,8 +806,7 @@ header ul{
   width: 100%;
 }
 .about_parallex_1 {
-  background-size: 50%;
-  background-position: 20% 100%;
+  background-position: 50% 0%;
 }
     
     header div:first-child{
@@ -838,7 +834,7 @@ header .lines {
   line-height: 1.25;
 }
 .about_firstSlide_container {
-  padding: .5em;
+  padding: 1em;
 }
 /*Strip the ul of padding and list styling*/
 .mobile-menu ul {
