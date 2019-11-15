@@ -1,0 +1,122 @@
+.chatbot-container{
+    position: absolute;
+    bottom: 10px;
+    right: 21px;
+    width: 300px;
+    height: 400px;
+    min-height: 400px;
+    max-height: 400px;
+    z-index: 999;
+}
+.chatbot-header{
+    width: 100%;
+    height:10%;
+    display:table;
+    background: #29303b;
+    color: white;
+}
+.chatbot-header p{
+    display: table-cell;
+    height: 90%;
+    width: 90%;
+    vertical-align: middle;
+    padding: 5%;
+}
+.chatbot-header span{
+    display: table-cell;
+    height: 100%;
+    vertical-align: middle;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 900;
+}
+.chatList{
+    height: 80%;
+    width: 100%;
+    overflow-y:auto;
+    background: rgba(256,256,256,.75);
+}
+.chatinput{
+    width: 100%;
+    height: 10%;
+}
+
+.chatinput input{
+    width: 90%;
+    border: none;
+    padding: 5%;
+    font-family: cursive;
+}
+.chatbot-icon{
+    width: 75px;
+    height: 75px;
+    position: absolute;
+    bottom: 50px;
+    right: 100px;
+    z-index: 10000;
+    cursor: pointer;
+}
+.chatbot-icon img{
+    width: 100%;
+}
+.chatList ul{
+    padding-bottom: 10px;
+}
+.chatList li{
+    display: table;
+    width: 96%;
+    min-height: 75px;
+    vertical-align: middle;
+    padding: 0% 2%;
+    margin-top: 10px;
+}
+.chatList .icon{
+    display: table-cell;
+    width: 50px;
+    vertical-align: middle;
+    padding: 10px;
+}
+.chatList .icon p{
+    height: 50px;
+    margin-right: 0px;
+    width: 50px;
+    background-image: url(../images/bg.jpg);
+    background-size: cover;
+    border-radius: 50%;
+
+}
+.client .icon p{
+    background-image: url(../images/whatido.png);
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.chatList .msg{
+    display: table-cell;
+    vertical-align: middle;
+    padding: 1em;
+    border: 1px solid transparent;
+    border-radius: 20px 20px;
+    background: white;
+    font-family: cursive;
+}
+
+@media only screen and (max-width: 900px) {
+.chatbot-icon {
+    width: 75px;
+    height: 75px;
+    position: absolute;
+    bottom: 25px;
+    right: 25px;
+    z-index: 10000;
+    cursor: pointer;
+}
+.chatList {
+    height: 80%;
+    width: 100%;
+    overflow-y: auto;
+    /* background: rgba(256,256,256,.75); */
+    background: white;
+    border-bottom: 1px solid black;
+}
+}

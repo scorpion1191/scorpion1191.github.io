@@ -96,12 +96,17 @@ header small{
   width: 100%
 }
 .pros_cons{
-  min-height: 500px;
+  min-height: 400px;
     line-height: 1.5;
+    background: rgba(0,0,0,.75);
 }
 .pros_cons_text{
   width: 100%;
-
+  background: #29303b;
+  color: white;
+  border-bottom: 1px solid white;
+  border-top: 1px solid white;
+  font-family: Verdana;
 }
 .proscontainer div{
   padding: 2em;
@@ -111,14 +116,18 @@ header small{
 }
 .pros_cons_text div{
   display: table;
-  padding-bottom: 5%;
   height: 100%;
   width: 100%;
 }
 .brife_header{
   height: 100%;
-    display: table;
-    width: 100%;
+  display: table;
+  width: 100%;
+  background-image: linear-gradient(to right,rgba(0,0,0,.2),rgba(0,0,0,.75), rgba(0,0,0,.9));
+  font-size: 3em;
+    color: white;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
 }
 .brief_content{
   min-height: 500px;
@@ -138,12 +147,13 @@ header small{
   padding-top: 1em;
 padding-bottom: 1em;
  color: rgba(254,254,254,.75);
+ background: #29303b;
 }
 .brief_content p{
   width: 75%;
   font-size: 1rem;
   padding-bottom: 1rem;
-    color: #5085A5;
+  color: rgba(256,256,256,.8);
 }
 .pros_cons_text p{
   display: table-cell;
@@ -170,12 +180,16 @@ padding-bottom: 1em;
 -moz-transition:width .25s; /* Firefox 4 */
 -webkit-transition:width .25s; /* Safari and Chrome */
 -o-transition:width .25s; /* Opera */
-    background: #F7F9FB;
+    background: #29303b;
 }
 .contentContainer{
   height: 100%;
   overflow:auto;
   display: none;
+  background: rgba(0,0,0,.6);
+}
+.about_container{
+  background: white;
 }
 .Active .contentContainer{
   display: block;
@@ -195,6 +209,7 @@ padding-bottom: 1em;
   right: 0px;
   display: table;
   cursor: pointer;
+  background: grey;
 }
 .pageTitlelabel p{
   -moz-transform: rotate(-90.0deg);  /* FF3.5+ */
@@ -211,7 +226,7 @@ padding-bottom: 1em;
   text-align: center;
   padding-top:30px;
 }
-.materialRedbgbg{
+/* .materialRedbgbg{
   background: #db3236;
 }
 
@@ -228,7 +243,7 @@ padding-bottom: 1em;
 }
 .materialorange{
   background: #FF6F00
-}
+} */
 .about_content{
   margin-top: 10px;
   font-size: 1.5rem;
@@ -239,15 +254,14 @@ padding-bottom: 1em;
 }
 
 .about_headers{
-  font-weight: 700;
   text-transform: uppercase;
-  color: #31708E;
-  font-size: 2.5rem;
+  font-size: 1.5em;
+  padding: .5em 0px;
 }
 .about_subheaders{
   font-weight: 700;
     text-transform: uppercase;
-    color: #687864;
+    color: white;
     font-size: 1.5rem;
     padding-bottom: 1rem;
 }
@@ -325,8 +339,6 @@ ul.social li a:hover i { -moz-transform: rotate(360deg); -webkit-transform: rota
 .about_firstSlide_container{
  padding: 1em;
 }
-/* parallex */
-
 .about_parallex_1, .about_parallex_2, .about_parallex_3 {
   position: relative;
   background-attachment: fixed;
@@ -342,8 +354,10 @@ ul.social li a:hover i { -moz-transform: rotate(360deg); -webkit-transform: rota
 }
 
 .about_parallex_2 {
-  xbackground-image: url("../images/thinking.jpg");
-  min-height: 200px;
+  background-image: url(../images/whatido.png);
+    background-size: 9%;
+    background-position: 35% 35%;
+    min-height: 275px;
 }
 
 .caption {
@@ -367,7 +381,8 @@ ul.social li a:hover i { -moz-transform: rotate(360deg); -webkit-transform: rota
   background:rgba(60, 186, 84, .25);
   position: relative;
 float: left;
-font-size: 1rem;
+font-size: 1.25em;
+    color: rgba(256,256,256,.75);
   -webkit-animation: myfirst 1s 1; /* Safari 4.0 - 8.0 */
   -webkit-animation-direction: forward; /* Safari 4.0 - 8.0 */
   animation: myfirst 1s 1;
@@ -377,7 +392,8 @@ font-size: 1rem;
   width: calc(50% - 100px);
   height: 400px;
 float: right;
-font-size: 1rem;
+font-size: 1.25em;
+    color: rgba(256,256,256,.75);
   background: rgba(219, 50, 54, .25);
   position: relative;
   -webkit-animation: mysecond 1s 1; /* Safari 4.0 - 8.0 */
@@ -514,7 +530,7 @@ overflow: auto;
 .project_header p{
     font-weight: 700;
     text-transform: uppercase;
-    color: #687864;
+    color: white;
     font-size: 1rem;
     padding-bottom: 1rem;
     border-bottom: 1px solid #4885ed;
@@ -594,7 +610,7 @@ overflow: auto;
 .technology_subheaders{
   font-weight: 700;
   text-transform: uppercase;
-  color: #687864;
+  color: white;
   font-size: 1rem;
   padding-bottom: 1rem;
   border-bottom: 1px solid #4885ed;
@@ -676,8 +692,10 @@ header ul{
     font-size: 1rem;
 }
 .about_parallex_2 {
-  xbackground-image: url(../images/thinking.jpg);
-  min-height: 125px;
+  min-height: 100px;
+}
+.brife_header{
+font-size: 1.5em;
 }
 .pros_cons_text div{
   text-align: left;
@@ -735,9 +753,9 @@ header ul{
   width: 80%;
 }
 .brife_header p {
-  text-align: left;
-  width: 95%;
-  padding-left: 5%;
+  text-align: right;
+    width: 90%;
+    padding-right: 10%;
 }
 .summary{
   padding: 1em;

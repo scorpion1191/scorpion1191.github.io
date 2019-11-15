@@ -5,6 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="bootstrap/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/chatbot.css">
 	<script src="https://d3js.org/d3.v4.min.js"></script>
 	<script src="script/underscore.min.js"></script>
 </head>
@@ -487,7 +488,7 @@
 											<!--image-->
 											<!-- <p class="logoImage"><img src="./images/myImage.jpg"></p> -->
 											<!--name-->
-											<p class="fullHeight"><label class="brife_header_title about_headers">WHAT I DO</label></p>
+											<p class="fullHeight"><label class="brife_header_title">WHAT I DO</label></p>
 											<!--designation-->
 											<!--title text-->
 											<!-- <p class="titeletext"><label>" I am a Web Developer,who has a strong Willingness to learn new Technologies in this ever changing technology ecosystem.I have a In depth Knowledge of design and development of web/mobile user interfaces for interactive applications."</label></p> -->
@@ -534,6 +535,24 @@
 				</div>
 			</div>
 	</div>
+	<div class="chatbot-container" style="display: none;">
+		<div class="chatbot-header">
+			<p>Let's chat...</p>
+			<span onclick="hideChatbot()">X</span>
+		</div>
+		<div class="chatList">
+			<ul>
+				
+			</ul>
+		</div>
+		<div class="chatinput">
+			<input type="text" placeholder="what you wanna say..." onkeypress="getClientMsg(event,value)"/>
+		</div>
+	</div>
+	<div class="chatbot-icon" onclick="showChatbot()" style="display: block;">
+		<img src="images/chatbot.png"/>
+	</div>
 <script type="text/javascript" src="script/script.js"></script>
+<script type="text/javascript" src="script/chatbot.js"></script>
 </body>
 </html>
