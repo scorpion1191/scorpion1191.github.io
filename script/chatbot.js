@@ -80,7 +80,7 @@ function df_text_query (queryText) {
         }
     }
 
-    fetch('/api/df_text_query', {
+    fetch('https://anonymus-chatbot.herokuapp.com/api/df_text_query', {
             method: 'POST',
             headers: {'Content-Type': 'application/json;charset=utf-8'},
             body: JSON.stringify({text: queryText,userID:"my_portfolio"})
@@ -94,7 +94,7 @@ function df_text_query (queryText) {
 
 function df_event_query(eventName) {
 
-    const res = axios.post('/api/df_event_query',  {event: eventName, userID: cookies.get('userID')});
+    const res = axios.post('https://anonymus-chatbot.herokuapp.com/api/df_event_query',  {event: eventName, userID: cookies.get('userID')});
 
     for (let msg of res.data.fulfillmentMessages) {
         let says = {
