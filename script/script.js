@@ -149,6 +149,25 @@ function toggleAnimationProCon(){
 }
 
 
+function sendUserMsg(e){
+	e.preventDefault();
+	let text =  document.getElementById("Ysubject");
+	let name =  document.getElementById("Yname");
+	let email =  document.getElementById("Yemail");
+	fetch('http://anonymus-chatbot.herokuapp.com/api/df_mailer_msg', {
+            method: 'POST',
+            headers: {'Content-Type': 'application/json;charset=utf-8'},
+            body: JSON.stringify({text: text.value,name:name.value,email:email.value})
+        }).then(response => response.json()).then((data) =>{
+				text.value = "";
+				name.value = "";
+				email.value =  "";
+				alert(data["text"]);
+        }).catch((err) =>{
+			alert(data);
+        })
+}
+
 
 
 

@@ -29,12 +29,28 @@
 		<div class="contact fullHeight subContainer " style="z-index: 9;">
 			<div class="contentContainer">
 				   <div class="contactContainer">
-						<ul class="social text-center">
-								<li><a href="http://www.facebook.com/subbu1191" target="_blank" class="face" title="Facebook"><i class="fa fa-facebook"></i></a></li>
-								<li><a href="http://github.com/scorpion1191" target="_blank" class="twit" title="git"><i class="fa fa-github"></i></a></li>
-								<li><a href="https://stackoverflow.com/users/story/3398960" class="google" target="_blank" title="stackOverFlow"><i class="fa fa-stack-overflow"></i></a></li>
-								<li><a href="http://www.linkedin.com/in/subramanian-m-6218b165" target="_blank" class="linkedin" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
-						</ul>
+					   <div class="lefthalf">
+							<ul class="social text-center">
+									<li><a href="http://www.facebook.com/subbu1191" target="_blank" class="face" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+									<li><a href="http://github.com/scorpion1191" target="_blank" class="twit" title="git"><i class="fa fa-github"></i></a></li>
+									<li><a href="https://stackoverflow.com/users/story/3398960" class="google" target="_blank" title="stackOverFlow"><i class="fa fa-stack-overflow"></i></a></li>
+									<li><a href="http://www.linkedin.com/in/subramanian-m-6218b165" target="_blank" class="linkedin" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
+							</ul>
+					   </div>
+					   <div class="righthalf">
+							<form action="/" method="post">
+								<p><label for="Yname">Your Name</label></p>
+								<input type="text" id="Yname" name="name" placeholder="Your name..">
+							
+								<p><label for="Yemail">Your Email</label></p>
+								<input type="email" id="Yemail" name="Email" placeholder="Your Email..">
+							
+								<p><label for="Ysubject">Subject</label></p>
+								<textarea id="Ysubject" name="subject" placeholder="What you want to say.." style="height:200px"></textarea>
+							
+								<input type="submit" value="Submit" onclick="sendUserMsg(event)">
+							  </form>
+					   </div>
 				   </div>     
 			</div>
 			<div class="pageTitlelabel materialyellowbg">
