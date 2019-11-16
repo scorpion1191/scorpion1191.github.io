@@ -330,7 +330,7 @@ ul.social li a:hover i { -moz-transform: rotate(360deg); -webkit-transform: rota
   font-size: 1em;
   font-family: Verdana;
 }
-.contactContainer input[type=text], select, textarea {
+.contactContainer input[type=text],input[type=email],select, textarea {
   width: 100%;
   padding: 12px;
   border: 1px solid #ccc;
