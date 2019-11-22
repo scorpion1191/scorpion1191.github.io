@@ -87,7 +87,26 @@ header small{
 .container{
   height: calc(100% - 50px);
 }
-
+.loader{
+  width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    background: rgba(256,356,256,.9);
+    z-index: 10000;
+}
+.loader img{
+  position: absolute;
+  top: 35%;
+  left: 45%;
+  width:100px;
+}
+.loader-show{
+  display: block;
+}
+.loader-hide{
+  display: none;
+}
 
 .fullHeight{
   height: 100%
@@ -851,6 +870,9 @@ font-size: 1.5em;
   font-size: .75rem;
     
 }
+.project_content {
+  padding: 10px 20px;
+}
 .project_content div:first-child{
   padding:0px;
 }
@@ -1048,7 +1070,7 @@ position: absolute;
   }
   .contactContainer form{
     width:80%;
-    padding: 0 10%;
+    padding: 0 10% 10%;
     color: white;
     font-size: 1em;
     font-family: Verdana;

@@ -74,13 +74,6 @@ document.addEventListener("DOMContentLoaded", function(event) {
 	window.addEventListener("resize", _.throttle(function(){
 		resizeWidthActElement();
 	},100));
-
-	document.getElementsByClassName("about_container")[0].addEventListener("scroll", _.throttle(function(){
-		toggleAnimationProCon();
-	},100));
-
-
-
 });
 // document.getElementsByClassName("subContainer").addEventListener("click", function(e){
 	
@@ -133,39 +126,39 @@ function isScrolledIntoView(el) {
     return isVisible;
 }
 
-
-function toggleAnimationProCon(){
-	let prosdiv = document.getElementsByClassName("proscontainer")[0];
-	let consdiv = document.getElementsByClassName("conscontainer")[0];
-
-	if(isScrolledIntoView(document.getElementsByClassName("pros_cons")[0])){
-		prosdiv.classList.add("pros");
-		consdiv.classList.add("cons");
-		
-	}else{
-		prosdiv.classList.remove("pros");
-		consdiv.classList.remove("cons");
-	}
-}
-
-
 function sendUserMsg(e){
 	e.preventDefault();
 	let text =  document.getElementById("Ysubject");
 	let name =  document.getElementById("Yname");
 	let email =  document.getElementById("Yemail");
+	toggleLoder();
 	fetch('http://anonymus-chatbot.herokuapp.com/api/df_mailer_msg', {
             method: 'POST',
             headers: {'Content-Type': 'application/json;charset=utf-8'},
             body: JSON.stringify({text: text.value,name:name.value,email:email.value})
         }).then(response => response.json()).then((data) =>{
+				toggleLoder()
 				text.value = "";
 				name.value = "";
 				email.value =  "";
 				alert(data["text"]);
+				
         }).catch((err) =>{
+			toggleLoder()
 			alert(data);
+			
         })
+}
+
+function toggleLoder(){
+	let loaderCont = document.getElementsByClassName("loader")[0];
+	if(!loaderCont.classList.contains('loader-show')){
+		loaderCont.classList.remove('loader-hide')
+		loaderCont.classList.add('loader-show')
+	}else{
+		loaderCont.classList.remove('loader-show')
+		loaderCont.classList.add('loader-hide')
+	}
 }
 
 
