@@ -4,36 +4,20 @@
    v2.0 | 20110126
    License: none (public domain)
 */
-
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 body {
-  line-height: 1;
   overflow: hidden;
-  font-family: "Raleway", Sans-serif;
+        padding: 0;
+    margin: 0;
+    font-family: cursive,Arial,sans-serif;
+    line-height: 180%;
+    letter-spacing: 0;
+    font-size: 16px;
+    font-weight: 400;
 }
 ol, ul {
 	list-style: none;
@@ -54,6 +38,9 @@ table {
 html,body,.container{
   height:100%;
   width: 100%;
+}
+.padding-bt-1rem{
+    padding-bottom: 1rem;
 }
 header{
   height: 50px;
@@ -139,8 +126,7 @@ header small{
   height: 100%;
   display: table;
   width: 100%;
-  background-image: linear-gradient(to right,rgba(0,0,0,.2),rgba(0,0,0,.75), rgba(0,0,0,.9));
-  font-size: 3em;
+  xbackground-image: linear-gradient(to right,rgba(82,86,89,0),rgba(82,86,89,.75), rgba(82,86,89,1));
     color: white;
     border-top: 1px solid white;
     border-bottom: 1px solid white;
@@ -176,11 +162,17 @@ padding-bottom: 1em;
   vertical-align: top;
   text-align: center;
 }
-.brife_header p{
-  text-align: center;
+.brife_header div{
+  text-align: right;
   display: table-cell;
   vertical-align: middle;
   width: 100%;
+  padding-right: 5%;
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: normal;
+  pointer-events: none;
+  transition: all .6s;
 }
 .summary{
   padding: 5em;
@@ -380,10 +372,13 @@ ul.social li a:hover i { -moz-transform: rotate(360deg); -webkit-transform: rota
 .about_firstSlide div{
   display: table-cell;
     vertical-align: middle;
-    font-size: 1.85vw;
-    line-height: 1.25;
-    font-family: Verdana;
-    font-weight: 100;
+}
+.Intro{
+    font-size: 2.25rem;
+    pointer-events: none;
+    transition: all .6s;
+    line-height: 88px;
+    font-weight: 400;
 }
 .about_firstSlide_container{
  padding: 1em;
@@ -405,8 +400,8 @@ ul.social li a:hover i { -moz-transform: rotate(360deg); -webkit-transform: rota
 .about_parallex_2 {
   background-image: url(../images/whatido.png);
     background-size: 9%;
-    background-position: 35% 35%;
-    min-height: 275px;
+    background-position: 80% 50%;
+    height: 100%
 }
 
 .caption {
@@ -1103,5 +1098,7 @@ position: absolute;
 } 
 
 
-
+iframe body {
+    background-color: #E0E1E3 
+}
 
