@@ -403,6 +403,12 @@ ul.social li a:hover i { -moz-transform: rotate(360deg); -webkit-transform: rota
     background-position: 80% 50%;
     height: 100%
 }
+.about_parallex_3 {
+  background-image: url(../images/sketch.png);
+    background-size: contain;
+    background-position: 15%;
+    height: 100%
+}
 
 .caption {
   position: absolute;
