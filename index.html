@@ -10,27 +10,29 @@
 	<script src="https://d3js.org/d3.v4.min.js"></script>
 	<script src="script/underscore.min.js"></script>
 </head>
-<body>
-	<header>
-		<div>
-			<h3>SUBRAMANIAN</h3>
-			<small>WEB DEVELOPER FROM INDIA</small>
+<body>          
+	<header class="display-table fullwidth border-bt primary-border-color">
+		<div class="display-table-cell fullwidth padding-lt-1rem padding-rt-1rem diplay-table-text-middle web-only">
+			<h3 class="display-inline-block header-font">SUBRAMANIAN</h3>
+			<small class="padding-lt-1rem">WEB DEVELOPER FROM INDIA</small>
 		</div>
-            <label for="show-menu" class="show-menu"><span>SUBRAMANIAN</span><div class="lines"></div></label>
+        <div class="mobile-only fullwidth fullHeight">
+            <label for="show-menu" class="show-menu text-center display-table-cell diplay-table-text-middle"><span class="header-font">SUBRAMANIAN</span><div class="lines"></div></label>
                 <input type="checkbox" id="show-menu">
-                    <ul id="menu">
+                <ul id="menu">
                     <li mobile-value="materialRedbgbg">About</li>
                     <li mobile-value="materialblue">Skills</li>
                     <li mobile-value="materialgreenbg">Work</li>
                     <li mobile-value="materialorange">Blog</li>
                     <li mobile-value="materialyellowbg">Contact</li>
                 </ul>
+        </div> 
 	</header>
 	<div class="container">
 		<div class="contact fullHeight subContainer " style="z-index: 9;">
-			<div class="contentContainer">
-				   <div class="contactContainer">
-					   <div class="lefthalf">
+			<div class="contentContainer fullHeight">
+				   <div class="contactContainer display-table fullHeight fullwidth">
+					   <div class="lefthalf display-table-cell diplay-table-text-middle">
 							<ul class="social text-center">
 									<li><a href="http://www.facebook.com/subbu1191" target="_blank" class="face" title="Facebook"><i class="fa fa-facebook"></i></a></li>
 									<li><a href="http://github.com/scorpion1191" target="_blank" class="twit" title="git"><i class="fa fa-github"></i></a></li>
@@ -38,8 +40,8 @@
 									<li><a href="http://www.linkedin.com/in/subramanian-m-6218b165" target="_blank" class="linkedin" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
 							</ul>
 					   </div>
-					   <div class="righthalf">
-							<form action="/" method="post">
+					   <div class="righthalf  display-table-cell diplay-table-text-middle">
+							<form class="normal-font" action="/" method="post">
 								<p><label for="Yname">Your Name</label></p>
 								<input type="text" id="Yname" name="name" placeholder="Your name..">
 							
@@ -54,14 +56,14 @@
 					   </div>
 				   </div>     
 			</div>
-			<div class="pageTitlelabel materialyellowbg">
-				<p>
+			<div class="pageTitlelabel primary-bg materialyellowbg">
+				<p class="white-text-color text-center display-table-cell diplay-table-text-middle">
 					contact
 				</p>
 			</div>
 		</div>
 		<div class="blog fullHeight subContainer " style="z-index: 8;">
-            <div class="contentContainer">
+            <div class="contentContainer fullHeight">
 						<ul style="padding-top: 50px">
 							<li>
 								<div class="project_content">
@@ -92,14 +94,14 @@
 							</li>
 						</ul> 
 				</div>
-			<div class="pageTitlelabel materialorange" >
-				<p>
+			<div class="pageTitlelabel primary-bg materialorange" >
+				<p class="white-text-color text-center display-table-cell diplay-table-text-middle">
 					blog
 				</p>
 			</div>
 		</div>
 		<div class="projects fullHeight subContainer" style="z-index: 7;">
-				<div class="contentContainer">
+				<div class="contentContainer fullHeight">
 						<ul>
 							<li>
 								<div class="project_timeline">
@@ -253,18 +255,17 @@
 							</li>
 						</ul> 
 				</div>
-				<div class="pageTitlelabel materialgreenbg">
-		
-					<p>
+				<div class="pageTitlelabel primary-bg materialgreenbg">
+					<p class="white-text-color text-center display-table-cell diplay-table-text-middle">
 						Work
 					</p>
 				</div>
 		</div>
 		<div class="technology fullHeight subContainer" style="z-index: 6;" >
-				<div class="contentContainer">
+				<div class="contentContainer fullHeight">
 								<ul class="text-center">
 										<li>
-											<p class="technology_subheaders">
+											<p class="technology_subheaders black-text-color padding-bt-1rem border-bt secondary-border-color">
 												WEB TECHNOLOGIES
 											</p>
 											<div class="chartContainer">
@@ -274,34 +275,34 @@
 																<animate id="animate" attributeName="width" attributeType="XML" from="0" to="100%" dur="2s"/>
 															</rect>
 															<rect width="100%" height="25" fill="rgba(0,0,0,0.25)"></rect>
-															<text x="10" y="18.5" fill="white">HTML</text>
+															<text class="small-font" x="10" y="18.5" fill="white">HTML</text>
 														</g>
 														<g transform="translate(0,30)">
 															<rect width="90%" height="25" fill="#4885ed">
 																	<animate attributeName="width" attributeType="XML" from="0" to="90%" begin="0s" dur="2s"/>
 															</rect>
 															<rect width="100%" height="25" fill="rgba(0,0,0,0.25)"></rect>
-															<text x="10" y="18.5" fill="white">CSS</text>
+															<text class="small-font" x="10" y="18.5" fill="white">CSS</text>
 														</g>
 														<g transform="translate(0,60)">
 															<rect width="90%" height="25" fill="#4885ed">
 																	<animate attributeName="width" attributeType="XML" from="0" to="90%" begin="0s" dur="2s"/>
 															</rect>
 															<rect width="100%" height="25" fill="rgba(0,0,0,0.25)"></rect>
-															<text x="10" y="18.5" fill="white">JAVASCRIPT</text>
+															<text class="small-font" x="10" y="18.5" fill="white">JAVASCRIPT</text>
 														</g>
 														<g transform="translate(0,90)">
 															<rect width="75%" height="25" fill="#4885ed">
 																	<animate attributeName="width" attributeType="XML" from="0" to="75%" begin="0s" dur="2s"/>
 															</rect>
 															<rect width="100%" height="25" fill="rgba(0,0,0,0.25)"></rect>
-															<text x="10" y="18.5" fill="white">TYPESCRIPT</text>
+															<text class="small-font" x="10" y="18.5" fill="white">TYPESCRIPT</text>
 														</g>
 													</svg>
 											</div>
 										</li>
 										<li>
-											<p class="technology_subheaders">
+											<p class="technology_subheaders black-text-color padding-bt-1rem border-bt secondary-border-color">
 												FRAMEWORK & LIBRARIES
 											</p>
 											<div class="chartContainer">
@@ -311,41 +312,41 @@
 																<animate attributeName="width" attributeType="XML" from="0" to="80%" begin="0s" dur="2s"/>
 														</rect>
 														<rect width="100%" height="25" fill="rgba(0,0,0,0.25)"></rect>
-														<text x="10" y="18.5" fill="white">ANGULAR</text>
+														<text class="small-font" x="10" y="18.5" fill="white">ANGULAR</text>
 													</g>
 													<g transform="translate(0,30)">
 														<rect width="90%" height="25" fill="#4885ed">
 																<animate attributeName="width" attributeType="XML" from="0" to="90%" begin="0s" dur="2s"/>
 														</rect>
 														<rect width="100%" height="25" fill="rgba(0,0,0,0.25)"></rect>
-														<text x="10" y="18.5" fill="white">JQUERY</text>
+														<text class="small-font" x="10" y="18.5" fill="white">JQUERY</text>
 													</g>
 													<g transform="translate(0,60)">
 														<rect width="70%" height="25" fill="#4885ed">
 																<animate attributeName="width" attributeType="XML" from="0" to="70%" begin="0s" dur="2s"/>
 														</rect>
 														<rect width="100%" height="25" fill="rgba(0,0,0,0.25)"></rect>
-														<text x="10" y="18.5" fill="white">D3</text>
+														<text class="small-font" x="10" y="18.5" fill="white">D3</text>
 													</g>
 													<g transform="translate(0,90)">
 														<rect width="70%" height="25" fill="#4885ed">
 																<animate attributeName="width" attributeType="XML" from="0" to="70%" begin="0s" dur="2s"/>
 														</rect>
 														<rect width="100%" height="25" fill="rgba(0,0,0,0.25)"></rect>
-														<text x="10" y="18.5" fill="white">EXTJS</text>
+														<text class="small-font" x="10" y="18.5" fill="white">EXTJS</text>
 													</g>
 													<g transform="translate(0,120)">
 															<rect width="50%" height="25" fill="#4885ed">
 																	<animate attributeName="width" attributeType="XML" from="0" to="50%" begin="0s" dur="2s"/>
 															</rect>
 															<rect width="100%" height="25" fill="rgba(0,0,0,0.25)"></rect>
-															<text x="10" y="18.5" fill="white">REACT</text>
+															<text class="small-font" x="10" y="18.5" fill="white">REACT</text>
 													</g>
 												</svg>
 											</div>
 										</li>
 										<li>
-											<p class="technology_subheaders">
+											<p class="technology_subheaders black-text-color padding-bt-1rem border-bt secondary-border-color">
 												PROGRAMMING SKILLS
 											</p>
 											<div class="chartContainer">
@@ -355,27 +356,27 @@
 																<animate attributeName="width" attributeType="XML" from="0" to="75%" begin="0s" dur="2s"/>
 														</rect>
 														<rect width="100%" height="25" fill="rgba(0,0,0,0.25)"></rect>
-														<text x="10" y="18.5" fill="white">NODEJS</text>
+														<text class="small-font" x="10" y="18.5" fill="white">NODEJS</text>
 													</g>
 													<g transform="translate(0,30)">
 														<rect width="60%" height="25" fill="#4885ed">
 																<animate attributeName="width" attributeType="XML" from="0" to="60%" begin="0s" dur="2s"/>
 														</rect>
 														<rect width="100%" height="25" fill="rgba(0,0,0,0.25)"></rect>
-														<text x="10" y="18.5" fill="white">C++</text>
+														<text class="small-font" x="10" y="18.5" fill="white">C++</text>
 													</g>
 													<g transform="translate(0,60)">
 														<rect width="40%" height="25" fill="#4885ed">
 																<animate attributeName="width" attributeType="XML" from="0" to="40%" begin="0s" dur="2s"/>
 														</rect>
 														<rect width="100%" height="25" fill="rgba(0,0,0,0.25)"></rect>
-														<text x="10" y="18.5" fill="white">PYTHON</text>
+														<text class="small-font" x="10" y="18.5" fill="white">PYTHON</text>
 													</g>
 												</svg>
 											</div>
 										</li>
 										<li>
-											<p class="technology_subheaders">
+											<p class="technology_subheaders black-text-color padding-bt-1rem border-bt secondary-border-color">
 												DATABASE & TOOLS
 											</p>
 											<div class="chartContainer">
@@ -385,41 +386,41 @@
 																<animate attributeName="width" attributeType="XML" from="0" to="75%" begin="0s" dur="2s"/>
 														</rect>
 														<rect width="100%" height="25" fill="rgba(0,0,0,0.25)"></rect>
-														<text x="10" y="18.5" fill="white">SQL</text>
+														<text class="small-font" x="10" y="18.5" fill="white">SQL</text>
 													</g>
 													<g transform="translate(0,30)">
 														<rect width="40%" height="25" fill="#4885ed">
 																<animate attributeName="width" attributeType="XML" from="0" to="40%" begin="0s" dur="2s"/>
 														</rect>
 														<rect width="100%" height="25" fill="rgba(0,0,0,0.25)"></rect>
-														<text x="10" y="18.5" fill="white">MANGODB</text>
+														<text class="small-font" x="10" y="18.5" fill="white">MANGODB</text>
 													</g>
 													<g transform="translate(0,60)">
 														<rect width="75%" height="25" fill="#4885ed">
 																<animate attributeName="width" attributeType="XML" from="0" to="75%" begin="0s" dur="2s"/>
 														</rect>
 														<rect width="100%" height="25" fill="rgba(0,0,0,0.25)"></rect>
-														<text x="10" y="18.5" fill="white">ADOBE PHOTOSHOP</text>
+														<text class="small-font" x="10" y="18.5" fill="white">ADOBE PHOTOSHOP</text>
 													</g>
 													<g transform="translate(0,90)">
 														<rect width="70%" height="25" fill="#4885ed">
 																<animate attributeName="width" attributeType="XML" from="0" to="70%" begin="0s" dur="2s"/>
 														</rect>
 														<rect width="100%" height="25" fill="rgba(0,0,0,0.25)"></rect>
-														<text x="10" y="18.5" fill="white">MICROSOFT OFFICE</text>
+														<text class="small-font" x="10" y="18.5" fill="white">MICROSOFT OFFICE</text>
 													</g>
 													<g transform="translate(0,120)">
 														<rect width="60%" height="25" fill="#4885ed">
 																<animate attributeName="width" attributeType="XML" from="0" to="60%" begin="0s" dur="2s"/>
 														</rect>
 														<rect width="100%" height="25" fill="rgba(0,0,0,0.25)"></rect>
-														<text x="10" y="18.5" fill="white">QLIK</text>
+														<text class="small-font" x="10" y="18.5" fill="white">QLIK</text>
 													</g>
 												</svg>
 											</div>
 										</li>
 										<li>
-											<p class="technology_subheaders">
+											<p class="technology_subheaders black-text-color padding-bt-1rem border-bt secondary-border-color">
 												LANGUAGE
 											</p>
 											<div class="chartContainer">
@@ -429,106 +430,87 @@
 																<animate attributeName="width" attributeType="XML" from="0" to="100%" begin="0s" dur="2s"/>
 														</rect>
 														<rect width="100%" height="25" fill="rgba(0,0,0,0.25)"></rect>
-														<text x="10" y="18.5" fill="white">TAMIL</text>
+														<text class="small-font" x="10" y="18.5" fill="white">TAMIL</text>
 													</g>
 													<g transform="translate(0,30)">
 														<rect width="90%" height="25" fill="#4885ed">
 																<animate attributeName="width" attributeType="XML" from="0" to="90%" begin="0s" dur="2s"/>
 														</rect>
 														<rect width="100%" height="25" fill="rgba(0,0,0,0.25)"></rect>
-														<text x="10" y="18.5" fill="white">ENGLISH</text>
+														<text class="small-font" x="10" y="18.5" fill="white">ENGLISH</text>
 													</g>
 													<g transform="translate(0,60)">
 														<rect width="30%" height="25" fill="#4885ed">
 																<animate attributeName="width" attributeType="XML" from="0" to="30%" begin="0s" dur="2s"/>
 														</rect>
 														<rect width="100%" height="25" fill="rgba(0,0,0,0.25)"></rect>
-														<text x="10" y="18.5" fill="white">GERMAN</text>
+														<text class="small-font" x="10" y="18.5" fill="white">GERMAN</text>
 													</g>
 												</svg>
 											</div>
 										</li>
 								</ul>
 				</div>
-				<div class="pageTitlelabel materialblue">
-					<p>
+				<div class="pageTitlelabel primary-bg materialblue">
+					<p class="white-text-color text-center display-table-cell diplay-table-text-middle">
 						Skills
 					</p>
 				</div>
 		</div>
 		<div class="fullHeight subContainer Active" style="z-index: 5;">
-				<div class="contentContainer about_container">
-							  <div class="about_parallex_1">
-								<div class="caption about">
-										<div class="about_firstSlide">
-											<div class="about_firstSlide_container" style="width:50%">
-												<div class="Intro">
-                                                    Hello World !!! </br></br>
-                                                    my name is <b>Subramanian</b>,I'm a full stack web developer,based in India and this is my online portfolio.
-												</div>
-											</div>
-                                            <div style="width:50%;background:#525659;text-align: center">
-                                            <iframe
-    src="myResume.pdf#view=fit&scrollbar=0&toolbar=0&navpanes=0&statusbar=0"
-    frameBorder="0"
-    allowtransparency = "true"
-    height="80%"
-    width="80%"
-></iframe>
-                                            </div>
-										</div>
-								</div>
-							  </div>  
-							  <div class="about_parallex_2">
-									<div class="caption fullHeight">
-										<div class="fullHeight" style="display: table;width: 50%;height: 100%">
-											<!--image-->
-											<!-- <p class="logoImage"><img src="./images/myImage.jpg"></p> -->
-											<!--name-->
-											<div style="width: 50%;vertical-align: middle;display: table-cell;background:#525659;padding: 1em;color:white">
-                                                <div class="padding-bt-1rem">What I Do ?</div>
-												<h4>DESIGN</h4>
-												<p class="padding-bt-1rem">User experience design / User interface design (UX/UI) , data-driven visualisations/applications following user requirements and best practice.</p>
-												<h4>BUILD</h4>
-												<p class="padding-bt-1rem">Web application builds (typically using HTML5, CSS3, JavaScript, D3, Angular, React, SQL & NodeJs).</p> 
-												<h4>TEST</h4>
-												<p class="padding-bt-1rem">Implementing Test Cases(typically using Selenium ,Protractor, Jasmine, JUnit)</p>   
-												<h4>PROTOTYPING</h4>
-												<p class="padding-bt-1rem">Creation of conceptual designs and prototypes.</p>
-										   </div>
-											<!--designation-->
-											<!--title text-->
-											<!-- <p class="titeletext"><label>" I am a Web Developer,who has a strong Willingness to learn new Technologies in this ever changing technology ecosystem.I have a In depth Knowledge of design and development of web/mobile user interfaces for interactive applications."</label></p> -->
-										</div>
-								</div>
-							  </div>
-							  <div class="about_parallex_3">
-									<div class="caption about">
-                                        <div class="fullHeight" style="display: table;width: 50%;height: 100%;float: right">
-											<!--image-->
-											<!-- <p class="logoImage"><img src="./images/myImage.jpg"></p> -->
-											<!--name-->
-											<div style="width: 50%;vertical-align: middle;display: table-cell;background:#525659;padding: 1em;color:white">
-                                                Thats all about me!!.To summarize , I am a Web Developer with more than 7 years of IT Experience, who have a strong Willingness to learn new Technologies in
-														this ever changing technology ecosystem. Have In-depth Knowledge of design and development of web/mobile user interfaces and interactive applications, have a good
-														understanding of computer science fundamentals such as data structures and algorithm , have a proficient knowledge of object oriented programming language like python,Server side Scripting language like Node Js and Scripting
-														language like JavaScript ,Have good exposure to webservices,Restful and MVC application architecture 
-										   </div>
-											<!--designation-->
-											<!--title text-->
-											<!-- <p class="titeletext"><label>" I am a Web Developer,who has a strong Willingness to learn new Technologies in this ever changing technology ecosystem.I have a In depth Knowledge of design and development of web/mobile user interfaces for interactive applications."</label></p> -->
-										</div>
-									</div>
-							  </div>
-							  
+				<div class="contentContainer fullHeight">
+                    <div class="about_parallex_1">
+                            <div class="display-table fullHeight fullwidth">
+                                <div class="display-table-cell diplay-table-text-middle">
+                                    <div class="header-font padding-lt-1rem padding-rt-1rem">
+                                        Hello World !!! <br><br>
+                                        my name is <strong>Subramanian</strong>,<br>I'm a full stack web developer,<br>based in India and this is my online portfolio.
+                                    </div>
+                                </div>
+                                <div class="web-only display-table-cell diplay-table-text-middle primary-bg text-center" style="width: 50%">
+                                    <iframe
+                                src="myResume.pdf#view=fit&scrollbar=0&toolbar=0&navpanes=0&statusbar=0"
+                                        frameBorder="0"
+                                        allowtransparency = "true"
+                                        height="80%"
+                                        width="80%"
+                                    ></iframe>
+                                </div>
+				            </div>        
+				    </div>  
+                    <div class="about_parallex_2">
+                            <div class="display-table fullHeight">
+                                <div class="display-table-cell diplay-table-text-middle primary-bg white-text-color padding-lt-1rem padding-rt-1rem">
+                                    <div class="padding-bt-2rem header-font">What I Do ?</div>
+                                    <h4 class="header-font padding-bt-1rem">DESIGN</h4>
+                                    <p class="padding-bt-2rem normal-font">User experience design / User interface design (UX/UI) , data-driven visualisations/applications following user requirements and best practice.</p>
+                                    <h4 class="header-font padding-bt-1rem">BUILD</h4>
+                                    <p class="padding-bt-2rem normal-font">Web application builds (typically using HTML5, CSS3, JavaScript, D3, Angular, React, SQL & NodeJs).</p> 
+                                    <h4 class="header-font padding-bt-1rem">TEST</h4>
+                                    <p class="padding-bt-2rem normal-font">Implementing Test Cases(typically using Selenium ,Protractor, Jasmine, JUnit)</p>   
+                                    <h4 class="header-font padding-bt-1rem">PROTOTYPING</h4>
+                                    <p class="padding-bt-2rem normal-font">Creation of conceptual designs and prototypes.</p>
+                               </div>
+                                <div class="display-table-cell web-only" style="width: 50%"></div>
+                            </div>
+				    </div>
+                    <div class="about_parallex_3">
+                        <div class="fullHeight display-table fullHeight">
+                            <div class="web-only display-table-cell" style="width: 35%"></div>
+                            <div class="display-table-cell diplay-table-text-middle padding-lt-1rem padding-rt-1rem header-font" style="position: relative;z-index: 5000">
+                                    Thats all about me!!.To summarize , I am a Web Developer with more than 7 years of IT Experience, who have a strong Willingness to learn new Technologies in this ever changing technology ecosystem. Have In-depth Knowledge of design and development of web/mobile user interfaces and interactive applications, have a good               understanding of computer science fundamentals such as data structures and algorithm , have a proficient knowledge of object oriented programming language like python,Server side Scripting language like Node Js and Scripting                                 language like JavaScript ,Have good exposure to webservices,Restful and MVC application architecture 
+                               </div>
+                            <div class="mobile-only fullHeight fullwidth about-mobile-bg" style="position: absolute"></div>
+                            </div>
+                  </div>		  
 				</div>
-				<div class="pageTitlelabel materialRedbgbg">
-					<p>
+				<div class="pageTitlelabel primary-bg materialRedbgbg">
+					<p class="white-text-color text-center display-table-cell diplay-table-text-middle">
 							About
 					</p>
 				</div>
-			</div>
-	</div>
+	   </div>
+    </div>
 	<div class="chatbot-container" style="display: none;">
 		<div class="chatbot-header">
 			<p>Let's chat...</p>
@@ -545,9 +527,6 @@
 	</div>
 	<div class="chatbot-icon" onclick="showChatbot()" style="display: block;">
 		<img src="images/chatbot.png"/>
-	</div>
-	<div class="loader loader-hide">
-		<img src="images/loading.gif"/>
 	</div>
 <script type="text/javascript" src="script/script.js"></script>
 <script type="text/javascript" src="script/chatbot.js"></script>
