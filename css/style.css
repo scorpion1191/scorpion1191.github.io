@@ -285,7 +285,7 @@ overflow: auto;
 .project_header p{
     font-weight: 700;
     text-transform: uppercase;
-    color: white;
+    color: black;
     font-size: 1rem;
     padding-bottom: 1rem;
     border-bottom: 1px solid #4885ed;
@@ -327,7 +327,6 @@ overflow: auto;
     vertical-align: middle;
     text-align: center;
     font-size: 1rem;
-    font-weight: 700;
 }
 .project_timeline p{
   text-align: center;
