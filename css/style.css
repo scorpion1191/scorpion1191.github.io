@@ -1,9 +1,5 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Montserrat&family=Open+Sans&display=swap');
 @import url(https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css);
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
@@ -13,7 +9,7 @@ body {
     overflow: hidden;
     padding: 0;
     margin: 0;
-    font-family: cursive,Arial,sans-serif;
+    font-family: 'Acme','Arial',sans-serif;
     line-height: 180%;
     letter-spacing: 0;
     font-size: 100%;
@@ -489,7 +485,7 @@ header .lines {
 	display:block;
 	min-width:140px;
 	text-align: center;
-	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-family: 'Acme','Arial',sans-serif;
 	color: #fff;
   text-transform:uppercase;
 	background: #8aa8bd;
@@ -603,7 +599,7 @@ header input[type=checkbox]:checked ~ #menu{
     padding: 0 10% 10%;
     color: white;
     font-size: 1em;
-    font-family: Verdana;
+    font-family: 'Acme','Arial',sans-serif;
   }
 } 
 
@@ -633,5 +629,14 @@ header input[type=checkbox]:checked ~ #menu{
 		-ms-transition: all 0.8s;
 		transition: all 0.8s;
 	}
-
+    .about_parallex_2{
+        height: auto;
+    }
+    .about_parallex_3{
+        background-image: url(../images/sketch.png);
+        height: auto;
+    }
+    .about-mobile-bg{
+        background-image: none;
+    }
 } 
