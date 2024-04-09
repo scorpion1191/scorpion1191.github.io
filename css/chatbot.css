@@ -51,13 +51,13 @@
     width: 75px;
     height: 75px;
     position: absolute;
-    bottom: 50px;
-    right: 100px;
+    bottom: 0px;
+    right: 0px;
     z-index: 10000;
     cursor: pointer;
 }
 .chatbot-icon img{
-    width: 100%;
+    width: 75%;
 }
 .chatList ul{
     padding-bottom: 10px;
@@ -110,6 +110,10 @@
     right: 25px;
     z-index: 10000;
     cursor: pointer;
+    display: none !important;
+}
+{
+    display:none;
 }
 .chatList {
     height: 80%;

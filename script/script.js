@@ -53,9 +53,9 @@ document.addEventListener("DOMContentLoaded", function(event) {
       if(parseInt(currentElement.offsetWidth) <= 50){
         if(getIndexOfSubNav(currentElement.parentElement,activeElement) < getIndexOfSubNav(currentElement.parentElement,currentElement)){
           activeElement.style.width = ((containerWidth < 900) ? 10 : 50)+"px";
-          currentElement.style.width = (containerWidth - (subcontainerWidth*subContainersLength)-20) +"px";
+          currentElement.style.width = (containerWidth - (subcontainerWidth*subContainersLength)-15) +"px";
         }else{
-          currentElement.style.width = (containerWidth - (subcontainerWidth*subContainersLength)-20) +"px";
+          currentElement.style.width = (containerWidth - (subcontainerWidth*subContainersLength)-15) +"px";
           activeElement.style.width = ((containerWidth < 900) ? 10 : 50)+"px";
         }
 
@@ -111,7 +111,7 @@ function resizeWidthActElement(){
     for (var i = 0; i < subContainersLength; i++) {
 		document.getElementsByClassName("subContainer")[i].style.width = (subcontainerWidth)+"px";
 	}
-    activeElement.style.width = (containerWidth - (subcontainerWidth*(subContainersLength-1))-20) +"px";
+    activeElement.style.width = (containerWidth - (subcontainerWidth*(subContainersLength-1))-15) +"px";
 }
 
 function isScrolledIntoView(el) {

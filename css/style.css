@@ -182,22 +182,21 @@ header{height: 50px;}
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
 }
 .about_parallex_1 {
     height: 100%;
-    background-position: 0% 0%;
+    background-position: right;
 }
 
 .about_parallex_2 {
-    background-image: url(../images/whatido.png);
-    background-size: 9%;
-    background-position: 80% 50%;
-    height: 100%
+    background-image: url(../images/what_i_do.gif);
+    background-size: 45%;
+    background-position: 100% 45%;
+    height: 100%;
 }
 .about_parallex_3 {
     background-image: url(../images/sketch.png);
-    background-size: contain;
     background-position: 15%;
     height: 100%
 }
@@ -206,10 +205,14 @@ header{height: 50px;}
 /*flip card transformation*/
 
 .flip-card {
-  background-color: transparent;
+  background-color: white;
   width: 100%;
   height: 100%;
   perspective: 1000px;
+  border: 1px solid #eee;
+  overflow: auto;
+  border-top: 2px solid #1B5E20 !important;
+  box-shadow: 2px 2px 2px rgba(0,0,0,0.25);
 }
 
 .flip-card-inner {
@@ -269,7 +272,7 @@ overflow: auto;
   width: 3px;
   margin-left: -1.5px;
   content: '';
-  background-color: #eee;
+  background-color: #81C784;
 }
 .projects ul li{
   position: relative;
@@ -305,15 +308,16 @@ overflow: auto;
     border-radius: 100%;
     width: 100px;
     height: 100px;
-    background-color: #eee;
+    background-color: #66BB6A;
     POSITION: absolute;
     left: 30px;
     top: 30px;
+    z-index: 100;
 }
 .sub_projects{
     width: 45%;
-    height: 300px;
-    display: inline-block;
+    height: 250px;
+    display: inline-flex;
 }
 .sub_projects_title{
    display: table;
@@ -378,8 +382,72 @@ overflow: auto;
   padding-top: 10px;
   width: 95%;
 }
+
+
+.s-tag{
+    display: inline-flex;
+    align-content: center;
+    justify-content: center;
+    min-width: 0;
+    padding-left: 4px;
+    padding-right: 4px;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 3px;
+    font-size: 12px;
+    line-height: 1.84615385;
+    text-decoration: none;
+    vertical-align: middle;
+    white-space: nowrap;
+    border-color: transparent;
+    background-color: #1B5E20;
+}
+
+.s-work:before{
+    content: " \02022 ";
+}
+
+.image_parallex_container{
+  position: relative;
+  overflow: hidden;
+}
+
+.title_image_bg_1{
+  position: absolute;
+  bottom: -100px;
+  width: 100%;
+  right: 0;
+  z-index: 19;
+}
+
+.title_image_bg_2{
+  position: absolute;
+  bottom: 100px;
+  width: 100%;
+  right: 0;
+  z-index: 18;
+  opacity: 0.75;
+}
+
+.title_image{
+  position: absolute;
+  bottom: -100px;
+  width: 100%;
+  right: 0;
+  z-index: 20;
+  width:75%
+}
+
+.tile_text{
+  top:10%;
+  width: 90%;
+  height:100%;
+  z-index:100;
+  position:absolute;
+}
+
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 1020px) {
     
     .web-only{display: none !important}
     .mobile-only{display: inherit !important}    
@@ -425,6 +493,14 @@ overflow: auto;
   font-size: 1rem;
 }
     
+.about_parallex_1, .about_parallex_2, .about_parallex_3 {
+  position: relative;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+    
 .project_header p{
   line-height: 1.25;
   font-size: .75rem;
@@ -434,7 +510,7 @@ overflow: auto;
   padding: 10px 20px;
 }
 .project_content div:first-child{
-  padding:0px;
+ padding-left: 0px;
 }
 .sub_projects{
     width: 100%;
@@ -468,6 +544,10 @@ header .lines {
   width:100%;
   position: absolute;
   background: #8aa8bd;
+}
+
+.title_image_bg_2{
+  bottom: 75px;
 }
 
 /*Create a horizontal list with spacing*/
@@ -638,4 +718,82 @@ header input[type=checkbox]:checked ~ #menu{
     .about-mobile-bg{
         background-image: none;
     }
+
+
+    
+.title_image_bg_1{
+  position: absolute;
+  bottom: -50px;
+  z-index: 19;
+}
+
+.title_image_bg_2{
+  position: absolute;
+  bottom: 50px;
+  opacity: 0.75;
+}
+
+.title_image{
+  position: absolute;
+  bottom: -50px;
+  width:75%
+}
+
+.tile_text{
+  top:20%;
+  background: rgba(256,256,256,0.5)
+}
 } 
+
+
+.personal_text h6 {
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 2.1px;
+  font-weight: normal;
+  margin-bottom: 12px;
+  color: #222222;
+}
+
+.personal_text h3 {
+  font-size: 48px;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+  color: #222222;
+}
+
+.personal_text h4 {
+  font-size: 16px;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  color: #222222;
+}
+
+.personal_text p {
+  max-width: 540px;
+  margin-bottom: 40px;
+}
+
+.personal_text .basic_info li a {
+  position: relative;
+  font-size: 16px;
+  color: black;
+}
+
+.materialRedbgbg{
+  background-color: #C62828;
+}
+
+.materialblue{
+  background-color: #1565C0;
+}
+.materialgreenbg{
+  background-color: #4CAF50;
+}
+.materialorange{
+  background-color: #FF5722;
+}
+.materialyellowbg{
+  background-color: #FFEB3B;
+}
